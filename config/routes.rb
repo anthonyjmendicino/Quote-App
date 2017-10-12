@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :quotes
   #resources :players
   resources :some_things
   resources :winners
@@ -11,6 +12,6 @@ Rails.application.routes.draw do
   resources :typos do
   resources :players
 end
-  root 'typos#index'
+  root 'quotes#index'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
