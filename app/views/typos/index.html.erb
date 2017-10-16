@@ -1,8 +1,8 @@
 <p id="notice"><%= notice %></p>
-
+<div class="w3-container w3-margin"
 <h1>Typos</h1>
 
-<table class="table table-responsive">
+<table class="w3-table-all">
   <thead>
     <tr>
       <th>Name</th>
@@ -16,9 +16,9 @@
       <tr>
         <td><%= typo.name %></td>
         <td><%= typo.stuff %></td>
-        <td><%= link_to 'Show', typo , class:"btn btn-xs btn-danger" %></td>
-        <td><%= link_to 'Edit', edit_typo_path(typo) , class:"btn btn-xs btn-danger" %></td>
-        <td><%= link_to 'Destroy', typo, method: :delete, data: { confirm: 'Are you sure?' } , class:"btn btn-xs btn-danger" %></td>
+        <td><%= link_to 'Show', typo , class:"w3-button w3-red" %></td>
+        <td><%= link_to 'Edit', edit_typo_path(typo) , class:"w3-button w3-red" %></td>
+        <td><%= link_to 'Destroy', typo, method: :delete, data: { confirm: 'Are you sure?' } , class:"w3-button w3-red" %></td>
       </tr>
     <% end %>
   </tbody>
@@ -26,4 +26,5 @@
 
 <br>
 
-<%= link_to 'New Typo', new_typo_path , class:"btn btn-xs btn-danger" %>
+<%= link_to 'New Typo', new_typo_path , class:"w3-button w3-red" %>
+</div>

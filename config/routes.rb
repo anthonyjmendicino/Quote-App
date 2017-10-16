@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :qs
   resources :quotes
   #resources :players
   resources :some_things

@@ -1,0 +1,28 @@
+<p id="notice"><%= notice %></p>
+
+<div class="w3-panel w3-black">
+
+<div class="w3-panel w3-red">q</div>
+
+<div class="w3-panel w3-black">
+
+<p>
+  <strong>One:</strong>
+  <%= @q.one %>
+</p>
+
+
+<p>
+  <strong>Two:</strong>
+  <%= @q.two %>
+</p>
+
+
+</div>
+
+<div class="w3-panel w3-black">
+
+<%= link_to 'Edit', edit_q_path(@q) ,class:"w3-button w3-red" %> |
+<%= link_to 'Back', qs_path , class:"w3-button w3-red" %>
+
+</div></div>
